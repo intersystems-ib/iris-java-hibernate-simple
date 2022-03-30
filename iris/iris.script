@@ -1,0 +1,8 @@
+    // unexpire passwords for dev mode
+    zn "%SYS"
+    do ##class(Security.Users).UnExpireUserPasswords("*")
+    
+    zn "USER"
+    do $system.OBJ.LoadDir("/opt/irisapp/src/", "ck", .errorlog, 1)
+
+    halt
