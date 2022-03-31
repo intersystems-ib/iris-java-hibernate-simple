@@ -3,5 +3,6 @@ obj
 bin
 *.bak
 target/*
+log4j.log
 
 iris.key
